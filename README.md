@@ -24,9 +24,9 @@ npm install
 This app includes 2 main JS scripts:
 
 * the **server**:
-* to track a selection of stocks 
-* to compute a defined strategy 
-* to detect buy or sell signals
+  * to track a selection of stocks 
+  * to compute a defined strategy 
+  * to detect buy or sell signals
 
 * the **broker**:
   * this script allows you to auto trade the signals received from the server.

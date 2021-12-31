@@ -19,6 +19,17 @@ cd ws-auto-trade
 npm install
 ```
 
+## Overview
+
+This app includes 2 main JS scripts:
+
+* the **server**:
+* to track a selection of stocks 
+* to compute a defined strategy 
+* to detect buy or sell signals
+
+* the **broker**:
+  * this script allows you to auto trade the signals received from the server.
 ## Authors
 
 * **Marc Eddy Lafontant** - *Owner* - [@mdy405](https://github.com/mdy405)

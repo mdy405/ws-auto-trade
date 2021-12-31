@@ -18,3 +18,11 @@ Change to repo's directory and install dependencies:
 cd ws-auto-trade
 npm install
 ```
+
+## Authors
+
+* **Marc Eddy Lafontant** - *Owner* - [@mdy405](https://github.com/mdy405)
+
+## License
+
+This project is licensed under the MIT License.

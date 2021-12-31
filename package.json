@@ -1,0 +1,28 @@
+{
+  "name": "ws-auto-trade",
+  "version": "0.1.0",
+  "description": "auto trade bot for wealthsimple",
+  "main": "./src/server.js",
+      "keywords": [
+        "whealthSimple",
+        "EFs",
+        "trading",
+        "bot",
+        "alert",
+        "signal",
+        "backtesting"
+    ],
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdy405/ws-auto-trade.git"
+  },
+  "author": "Marc Eddy Lafontant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdy405/ws-auto-trade/issues"
+  },
+  "homepage": "https://github.com/mdy405/ws-auto-trade#readme"
+}

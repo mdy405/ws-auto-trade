@@ -2,6 +2,9 @@ import WS from "wstrade-api";
 import path from "path";
 import Promisify from "util";
 import fs from "fs";
+import promptSync from "prompt-sync";
+
+const promp = promptSync();
 
 const __dirname = path.resolve() + "/src/wshelper";
 const { auth, quotes, data, accounts } = WS;
@@ -15,7 +18,16 @@ const writeFileAsync = promisify(fs.writeFile);
 const WS_TOKEN = __dirname + "/ws.json";
 
 //TODO: read code from Gmail
-auth.on("otp", "045716");
+auth.on("otp", () => {
+  const otp = promp("What is your 2FA code? ");
+  console.log(otp);
+  return otp;
+});
+
+auth.on("refresh", async () => {
+  console.log("My tokens were refreshed! and stored the new ones in ws.js.");
+  await writeFileAsync(WS_TOKEN, JSON.stringify(auth.tokens()));
+});
 
 export const loginToWs = async (email, password) => {
   try {

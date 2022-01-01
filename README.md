@@ -38,3 +38,7 @@ This app includes 2 main JS scripts:
 ## License
 
 This project is licensed under the MIT License.
+
+## Final Notes
+
+Feel free to fork and add new pull request to this repo.

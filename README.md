@@ -1,5 +1,6 @@
 # ws-auto-trade (Coming soon)
 An trading bot development framework for wealthsimple based on [ws-api](https://github.com/ahmedsakr/wstrade-api)
+(we will use official [wsapi](https://github.com/wealthsimple/wealthsimple.js) later )
 
 ## Disclaimer
 

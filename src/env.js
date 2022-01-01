@@ -10,11 +10,11 @@ const configs = envalid.cleanEnv(process.env, {
   WS_PASS: envalid.str({ default: "" }),
   USE_GMAIL: envalid.bool({ default: true }),
   GMAIL_ADDRESS: envalid.str({ default: "" }),
+  GMAIL_APP_PASSWORD: envalid.str({ default: "" }),
   SERVER_PORT: envalid.port({
     default: 4000,
     desc: "The port to start the server on",
   }),
-  GMAIL_APP_PASSWORD: envalid.str({ default: "" }),
 });
 
 export default configs;

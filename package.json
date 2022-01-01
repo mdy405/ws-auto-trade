@@ -3,15 +3,16 @@
   "version": "0.1.0",
   "description": "auto trade bot for wealthsimple",
   "main": "./src/server.js",
-      "keywords": [
-        "whealthSimple",
-        "EFs",
-        "trading",
-        "bot",
-        "alert",
-        "signal",
-        "backtesting"
-    ],
+  "type": "module",
+  "keywords": [
+    "whealthSimple",
+    "EFs",
+    "trading",
+    "bot",
+    "alert",
+    "signal",
+    "backtesting"
+  ],
   "scripts": {
     "start": "node ./src/server.js"
   },
@@ -24,5 +25,17 @@
   "bugs": {
     "url": "https://github.com/mdy405/ws-auto-trade/issues"
   },
-  "homepage": "https://github.com/mdy405/ws-auto-trade#readme"
+  "homepage": "https://github.com/mdy405/ws-auto-trade#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "envalid": "^7.2.2",
+    "express": "^4.17.2",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.0",
+    "socket.io-client": "^4.4.0",
+    "wstrade-api": "^1.10.2"
+  }
 }
